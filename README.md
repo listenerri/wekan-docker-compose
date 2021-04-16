@@ -33,3 +33,15 @@ docker-compose up -d
 ```
 
 Finally, setup a webhook in wekan, the webhook address should be: `http://wekan-dingtalk-webhooks-proxy-server:8080/api/wekan/webhook/`
+
+## Update
+
+Run the commands bellow to update:
+
+```
+git pull
+git submodule update --remote --merge
+docker-compose down
+docker-compose build
+docker-compose up -d
+```
