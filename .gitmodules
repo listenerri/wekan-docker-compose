@@ -1,0 +1,3 @@
+[submodule "wekan-dingtalk-webhooks-proxy-server"]
+	path = wekan-dingtalk-webhooks-proxy-server
+	url = git@github.com:listenerri/wekan-dingtalk-webhooks-proxy-server.git

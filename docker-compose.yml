@@ -87,6 +87,17 @@ version: '2'
 #-------------------------------------------------------------------------
 
 services:
+  wekan-dingtalk-webhooks-proxy-server:
+    image: wekan-dingtalk-webhooks-proxy-server
+    build:
+      context: ./wekan-dingtalk-webhooks-proxy-server
+      dockerfile: Dockerfile
+    container_name: wekan-dingtalk-webhooks-proxy-server
+    restart: always
+    networks:
+      - wekan-tier
+    volumes:
+      - ./wekan-dingtalk-webhooks-proxy-server/config:/opt/wekan-dingtalk-webhooks-proxy-server/config
 
   wekandb:
     #-------------------------------------------------------------------------------------
