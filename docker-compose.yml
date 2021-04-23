@@ -155,7 +155,7 @@ services:
       # remove port mapping if you use nginx reverse proxy, port 8080 is already exposed to wekan-tier network
       - 2080:8080
     environment:
-      - MONGO_URL=mongodb://wekandb:27017/wekan
+      - MONGO_URL=mongodb://wekan-db:27017/wekan
       #---------------------------------------------------------------
       # ==== ROOT_URL SETTING ====
       # Change ROOT_URL to your real Wekan URL, for example:
