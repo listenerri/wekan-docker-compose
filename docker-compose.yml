@@ -99,7 +99,7 @@ services:
     volumes:
       - ./wekan-dingtalk-webhooks-proxy-server/config:/opt/wekan-dingtalk-webhooks-proxy-server/config
 
-  wekandb:
+  wekan-db:
     #-------------------------------------------------------------------------------------
     # ==== MONGODB AND METEOR VERSION ====
     # a) mongodb latest, like 3.2 - 4.4 or newer https://hub.docker.com/_/mongo?tab=description
@@ -137,7 +137,7 @@ services:
     # c) Docker Hub builds do work https://hub.docker.com/r/wekanteam/wekan
     image: wekanteam/wekan:v5.23
     #-------------------------------------------------------------------------------------
-    container_name: wekan-app
+    container_name: wekan
     restart: always
     networks:
       - wekan-tier
