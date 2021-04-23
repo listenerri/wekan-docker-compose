@@ -629,7 +629,7 @@ services:
       #- SAML_ATTRIBUTES=
       #---------------------------------------------------------------------
     depends_on:
-      - wekandb
+      - wekan-db
 
 #---------------------------------------------------------------------------------
 # ==== OPTIONAL: SHARE DATABASE TO OFFICE LAN AND REMOTE VPN ====
