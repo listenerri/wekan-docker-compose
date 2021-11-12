@@ -135,7 +135,7 @@ services:
     # b) Using specific version tag:
     # image: quay.io/wekan/wekan:v4.52
     # c) Docker Hub builds do work https://hub.docker.com/r/wekanteam/wekan
-    image: wekanteam/wekan:v5.30
+    image: wekanteam/wekan:v5.71
     #-------------------------------------------------------------------------------------
     container_name: wekan
     restart: always
