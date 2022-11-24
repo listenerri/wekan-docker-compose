@@ -124,8 +124,8 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - /data/wekan-db:/data/db
-      - /data/wekan-db-dump:/dump
+      - ./data/wekan-db:/data/db
+      - ./data/wekan-db-dump:/dump
 
   wekan:
     #-------------------------------------------------------------------------------------
